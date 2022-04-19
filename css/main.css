@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;700;900&family=Poppins:wght@300;500&display=swap");
+body {
+  background: #141420;
+  font-family: "Montserrat";
+  overflow-x: hidden;
+}
+.head-wrapper {
+  height: 100vh;
+}
+.block1,
+.block2,
+.block3 {
+  padding: 100px;
+  background: #201739;
+  height: 270px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.block2 {
+  position: absolute;
+  right: 0px;
+}
+
+.block3 {
+  position: absolute;
+  height: 100px;
+  left: 45%;
+  top: 60%;
+  transform: translate(0%, 50%);
+}
+.glass {
+  background: rgba(255, 255, 255, 0);
+  backdrop-filter: blur(40px);
+}
+
+.main-head-wrapper {
+  height: 100vh;
+  width: 100%;
+  z-index: 9;
+
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  /* padding: 0px; */
+}
+.navbar {
+  background: rgba(255, 255, 255, 0);
+  /* border-bottom: 1px solid rgba(255, 255, 255, 0.3); */
+  backdrop-filter: blur(30px);
+}
+.nav-item {
+  padding: 0px 20px;
+}
+.nav-link {
+  color: white !important;
+  font-family: "Poppins";
+}
+.link-button {
+  background: transparent;
+  border: 2px solid #8068b4;
+  border-radius: 50px;
+  width: 100px;
+}
+
+.header-text-wrapper {
+  padding-top: 150px;
+  color: #f2f2f2;
+}
+
+.header-text-wrapper h3 {
+  color: #f2f2f2;
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 50px;
+  /* letter-spacing: 5px; */
+}
+
+.header-text-wrapper p {
+  padding: 20px 0px;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.main-button {
+  color: #f2f2f2;
+  width: 200px;
+  border: 2px solid #8058b4;
+  border-radius: 50px;
+}
+
+.main-section {
+  height: 80vh;
+  z-index: 9;
+  border: 0;
+}
+.text-wrap-main {
+  padding-top: 150px;
+}
+h1 {
+  color: #f2f2f2 !important;
+  font-family: Poppins;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+h3 {
+  color: #f2f2f2 !important;
+  font-family: Poppins;
+
+  font-weight: 600;
+}
+
+.text-wrap {
+  padding: 20px;
+  color: white;
+}
+#sally24 {
+  position: absolute;
+  bottom: 0px;
+
+  /* transform: rotateX(10deg); */
+}
+
+.info-block {
+  padding: 30px;
+}

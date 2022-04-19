@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/ScrollTrigger.min.js"></script>
+    <title>NFTv</title>
+  </head>
+  <body>
+    <div class="col-md-12 head-wrapper">
+      <div class="col-md-2 block1"></div>
+      <div class="col-md-2 block2"></div>
+      <div class="col-md-1 block3"></div>
+      <div class="col-md-12 main-head-wrapper glass">
+        <div class="container">
+          <!-- navbar  -->
+
+          <nav class="navbar navbar-expand-md navbar-dark">
+            <!-- Brand -->
+            <a class="navbar-brand" href="#">
+              <img
+                src="./images/logo.png"
+                width="100px"
+                class="img img-responsive"
+              />
+            </a>
+
+            <!-- Toggler/collapsibe Button -->
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#collapsibleNavbar"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Showcase</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">What is NFT</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About NFTv</a>
+                </li>
+                <li class="nav-item">
+                  <button class="nav-link link-button" href="#">Login</button>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+          <!-- end navbar  -->
+          <div class="row">
+            <div class="col-md-6 header-text-wrapper">
+              <h3>
+                Showcase your NFTs with
+                <b style="color: #8058b4"> NFTv </b> Platform
+              </h3>
+              <p>
+                NFT Screens to show only your owned NFTs. Get started today!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+                mollitia molestias, modi earum at saepe nobis nemo doloribus
+                voluptatibus. Quaerat commodi culpa nihil pariatur vel! Quia
+                dolore sunt nesciunt distinctio.
+              </p>
+              <button class="btn main-button">Get Started</button>
+            </div>
+            <div class="col-md-6">
+              <img src="./images/Saly-1.svg" width="100%" alt="" id="sally" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-12 main-section glass">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5 pr-auto">
+            <img
+              src="./images/Saly-24.png"
+              class="ml-auto"
+              width="400px"
+              alt=""
+              id="sally24"
+            />
+          </div>
+          <div class="col-md-7 text-wrap-main">
+            <h1>Set your owned NFT arts as wallpapers</h1>
+            <div class="text-wrap">
+              <h3>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Eligendi ab necessitatibus odit quia voluptatem? Adipisci sed
+                ullam
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-12 glass main-section" style="height: 50vh">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="text-wrap text-center">
+              <img src="./images/wallet.svg" alt="" />
+              <br />
+              <br />
+              <h3>Setup your wallet</h3>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="text-wrap text-center">
+              <img src="./images/collection.svg" alt="" />
+              <br />
+              <br />
+              <h3>Create our colletion</h3>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="text-wrap text-center">
+              <img src="./images/image.svg" alt="" />
+              <br />
+              <br />
+              <h3>Add your NFTs</h3>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="text-wrap text-center">
+              <img src="./images/list.svg" alt="" />
+              <br />
+              <br />
+              <h3>List your arts</h3>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-12 footer text-wrap">
+      <center>Copyright &copy; 2022</center>
+    </div>
+  </body>
+  <script>
+    gsap.registerPlugin("ScrollTrigger");
+
+    const tl = gsap.timeline();
+
+    tl.to(".header-text-wrapper", {
+      scale: 0,
+      duration: 2,
+      scrollTrigger: {
+        scrub: 1,
+      },
+    })
+      .to("#sally", {
+        x: 500,
+        duration: 5,
+        scrollTrigger: {
+          scrub: 1,
+        },
+      })
+      .to("#sally24", {
+        top: 0,
+        duration: 10,
+        scrollTrigger: {
+          scrub: 1,
+        },
+      });
+
+    tl.to(".block1", {
+      y: 1000,
+      duration: 3,
+      scrollTrigger: {
+        scrub: 2,
+      },
+    })
+      .to(".block2", {
+        y: 500,
+        duration: 6,
+        scrollTrigger: {
+          scrub: 1,
+        },
+      })
+      .to(".block3", {
+        y: 800,
+        duration: 1,
+        scrollTrigger: {
+          scrub: 3,
+        },
+      });
+  </script>
+</html>
